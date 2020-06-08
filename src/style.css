@@ -1,7 +1,16 @@
+:root{
+    --main-color:#BBDEFB
+}
+
+
 .filling:nth-child(even){
-    background-color:#BBDEFB
+    background-color:var(--main-color)
 }
 
 .filling:nth-child(odd):hover{
-    background-color:#BBDEFB;
+    background-color:var(--main-color);
+}
+
+.fillingItems:nth-child(odd){
+    background-color:var(--main-color) ;
 }

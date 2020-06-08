@@ -31,7 +31,7 @@ const TableComponent = () => {
     }
  
     return(
-        <table className="table-auto">
+        <table className="table-auto ml-4">
             <thead>
                 <tr>
                     <th className="px-4 py-2 bg-blue-400 ">Order id</th>

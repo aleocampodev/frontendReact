@@ -29,40 +29,40 @@ const StatusComponent = () => {
 
     return(
         <>
-            <table>
-    <thead>
-               <tr>
-                   <th>status</th>
-                   <th>Suma de total_amount</th>
-               </tr>
-           </thead>
-           <tbody>
-               {
-                   tableInfo.map(row => (
-                       <tr key={row[0]}>
-                           <td>{row[0]}</td>
-                           <td>{row[1]}</td>
-                       </tr>
-                   ))
-               }
-           </tbody>
-        </table>
-        <div>
-            <Doughnut data={{
-                datasets:[
+            <table className="ml-10 mt-10">
+                <thead>
+                    <tr>
+                        <th className="border px-4 pl-4 bg-blue-600">Status</th>
+                        <th className="border px-4 bg-blue-600">Suma de total_amount</th>
+                    </tr>
+                </thead>
+                <tbody>
                     {
-                        data: chartData[1],
-                        backgroundColor: [
-                            'blue',
-                            'red',
-                            'green'
-                        ]
+                        tableInfo.map(row => (
+                            <tr key={row[0]} className="fillingItems">
+                                <td className="border px-4">{row[0]}</td>
+                                <td className="border px-4">{row[1]}</td>
+                            </tr>
+                        ))
                     }
-                ],
-                labels: chartData[0],
-            }}/>
-        </div>
-    </>
+                </tbody>
+            </table>
+            <div className="m-20">
+                <Doughnut data={{
+                    datasets:[
+                        {
+                            data: chartData[1],
+                            backgroundColor: [
+                                '#ffd700',
+                                '#00BB2D',
+                                '#0D47A1'
+                            ]
+                        }
+                    ],
+                    labels: chartData[0],
+                }} />
+            </div>
+        </>
     )
 }
 
