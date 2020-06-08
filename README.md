@@ -1,68 +1,49 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Cuestionario
 
-In the project directory, you can run:
+## 1.¿Porque no debería usar la libreria JQuery, si estoy usando ReactJS?
 
-### `yarn start`
+No es conveniente usar Jquery con React, ya que Jquery hace cambios directos en el  DOM por ende React no los tomara, ocasionando inconsistencia en lo que se muestra en pantalla y lo que se encuentra en memoria(Lugar donde esta el estado de sus componentes y se ejecutan las modificaciones ). No tiene sentido usar una librería cuyas características ya las esta cubriendo React.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. ¿Porque usarias Hooks de las nuevas versiones de ReactJS, en lugar de class component?
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Los hooks  nos permiten crear componentes funcionales , este tipo de componentes contribuyen a generar un código más simple, por ende  no se verá complejo ni extenso. Ademas, loos hooks nos permiten reusar código entre componentes.
 
-### `yarn test`
+## 3.¿Que es un archivo JSX?
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Es una extensión de javascript la cual permite representar los elementos de React que se usaran en una sintaxis similar a HTML.
 
-### `yarn build`
+## 4.¿Que diferencia hay entre una function y una arrow function de Javascript?
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La diferencia entre ambos esta en el contexto de this , mientras que función , this se refiere al contexto de dicha función , en el caso de un arrow function , this  hace referencia al contexto que envuelve esa función.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 5.¿Que es Redux y cómo nos ayuda en los proyectos?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Redux es una librería  para manejar un estado global ,esto nos permite centralizar un estado para que pueda ser manejado por varios componentes , independientemente de su jerarquía y de esa manera evitar el “prop drilling”.
 
-### `yarn eject`
+## 6.¿Que nos permite hacer la siguiente declaración?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+const anyFunction = (param_1) => (param_2) => param_1 + p
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+La siguiente declaración es una función curry , la cual  permite componer funciones anidadas. Este patron funcional se utiliza bastante para componentes de alto nivel .
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Installacion
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Instalar dependencias:
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Comando para desplegar en produccion:
+```bash
+npm run build
+```
+Comando para ejcutar la web localmente:
+```bash
+npm run dev
+```
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
