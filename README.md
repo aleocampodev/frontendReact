@@ -24,7 +24,7 @@ Redux es una librería  para manejar un estado global ,esto nos permite centrali
 
 ## 6.¿Que nos permite hacer la siguiente declaración?
 
-## const anyFunction = (param_1) => (param_2) => param_1 + p
+const anyFunction = (param_1) => (param_2) => param_1 + p
 
 La siguiente declaración es una función curry , la cual  permite componer funciones anidadas. Este patron funcional se utiliza bastante para componentes de alto nivel .
 
